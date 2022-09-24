@@ -116,7 +116,7 @@ audio {margin-bottom:1em; }
 
  
 /* Medium Display */
-@media (min-width: 600px) {
+@media (min-width: 767px) {
       nav ul { display: flex; 
 	           flex-direction: row ;
                flex-wrap: nowrap;			   
@@ -144,7 +144,7 @@ audio {margin-bottom:1em; }
 	           flex-direction: row ;}		   
 }	
 /* Large Display */
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
       header{ font-size:100%; }
       nav      { font-weight: bold;}
  iframe { height:198px;width:750px; border:none;overflow:hidden;}	  
