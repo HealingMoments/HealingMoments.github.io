@@ -119,6 +119,7 @@ section h2 {
 } */
 
 }
+
 /* the styles for the footer */
 footer {text-align: center;
 		font-style: italic;
@@ -136,6 +137,7 @@ footer {text-align: center;
     padding-bottom: 56.25%;
     padding-top: 35px;
     height: 0;
+	color:#a22358;
     overflow: hidden;
 }
 
