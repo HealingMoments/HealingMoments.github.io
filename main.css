@@ -119,7 +119,7 @@ section h2 {
 } */
 
 }
-
+audio { width: 10%; display: block; }
 /* the styles for the footer */
 footer {text-align: center;
 		font-style: italic;
