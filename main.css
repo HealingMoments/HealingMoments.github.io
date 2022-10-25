@@ -217,10 +217,12 @@ only screen and (max-width: 479),
 	td { 
 		/* Behave  like a "row" */
 		border: none;
-		border-bottom: 1px solid #eee; 
+		/*border-bottom: 1px solid #eee; */
 		position: relative;
 		padding-left: 5%; 
 		text-align:center;
+		font:120%;
+		
 	}
 	
 	td:before { 
@@ -234,5 +236,8 @@ only screen and (max-width: 479),
 		/*padding-right: 10px; */
 		white-space: nowrap;
 	}
+	audio {max-height: 92%;
+           max-width: 92%;
+		   display:block}
 	
 			}
