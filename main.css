@@ -6,7 +6,7 @@ body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 100%;
 	width: 100%;                       /* changed from 990 pixels */
-	max-width: 1273px;                /* maximum width of page */
+	max-width: 1210px;                /* maximum width of page */
 	
 	margin: .5em auto; 
 	padding: .5em   
@@ -53,7 +53,7 @@ header h3 {
 }
 header img {
 	width: 100%;                      /* 80 / 990 normally, but using 100% in this case */
-	max-width: 1273px;                     /* native size */
+	max-width: 1210px;                     /* native size */
 	min-width: 40px;
 /*	float: left;
 /*	margin-left: 2.0202%;                /* 20 / 990 */
@@ -90,7 +90,7 @@ li,dd {font-size: 90%;}
 /* the styles for the section */
 section {
 	width: 95%;                            /* 535 / 990 */
-	float: left;   
+	/*float: left;   /*
     margin: 0 auto;
 	margin-left: 2.0202%;             /* 20 / 990 */
 	margin-right: 2.0202%; 
@@ -122,7 +122,8 @@ section h2 {
 } */
 
 }
-audio { max-height:100%;max-width:100%; padding:.25em; display:block;}
+audio { max-height:100%;max-width:100%; padding:.05em; display:block;color: #000000;}
+	 
 
 /* the styles for the footer */
 footer {text-align: center;
@@ -130,7 +131,7 @@ footer {text-align: center;
 		font-size: small;
 		clear: right;
 		}
-.black     {color:#000000;font-size: 92%
+.black     {color:#000000;font-size: 90%
             display: block;
            margin-left: auto;
            margin-right: auto;}
@@ -186,4 +187,52 @@ audio {margin-bottom:.25em; }
     /*    max-width: 92%;}
 		
 /*		margin:auto;
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 479),
+(min-device-width: 268px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; border:none; 
+	}
+	th{display:none;}
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: none;text-align:center; }
+	tr td:first-child {
+		font-weight: bold;
+		font-size:101%;
+	}
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 5%; 
+		text-align:center;
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		
+		/*padding-right: 10px; */
+		white-space: nowrap;
+	}
+	
 			}
