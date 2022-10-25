@@ -182,7 +182,12 @@ tr:nth-of-type(even) { background-color:#caeaf6; }
 form { display: flex;
        flex-flow: column nowrap;}
 input, datalist textarea { margin-bottom: .5em;}
-audio {margin-bottom:.25em; }
+.audio-container {
+	display: flex;
+	justify-content: center;
+	align-items: center:
+}
+/*audio {margin-bottom:.25em; }
     /*    max-height: 92%;
     /*    max-width: 92%;}
 		
