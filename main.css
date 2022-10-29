@@ -122,8 +122,8 @@ section h2 {
 } */
 
 }
-audio { max-height:100%;max-width:100%; padding:.05em; display:block;color: #6ca9d5;}
-	 
+/*audio goes here*/
+	
 
 /* the styles for the footer */
 footer {text-align: center;
@@ -188,10 +188,22 @@ tr:nth-of-type(even) { background-color:#caeaf6; }
 form { display: flex;
        flex-flow: column nowrap;}
 input, datalist textarea { margin-bottom: .5em;}
+audio::-internal-media-controls-download-button {
+    display:none;
+}
+audio::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+audio::-webkit-media-controls-panel {
+    width: calc(100% + 33px);
+	background-color: #94bddc;
+}  
+
+
 .audio-container {
-	display: flex;
-	justify-content: center;
-	align-items: center:
+	 audio::-webkit-media-controls-panel {
+  background-color: #56AEFF;
+}
 }
 /*audio {margin-bottom:.25em; }
     /*    max-height: 92%;
