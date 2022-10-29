@@ -188,6 +188,8 @@ tr:nth-of-type(even) { background-color:#caeaf6; }
 form { display: flex;
        flex-flow: column nowrap;}
 input, datalist textarea { margin-bottom: .5em;}
+audio::{webkit-appearance:auto;
+}	
 audio::-internal-media-controls-download-button {
     display:none;
 }
