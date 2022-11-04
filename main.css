@@ -188,33 +188,37 @@ tr:nth-of-type(even) { background-color:#caeaf6; }
 form { display: flex;
        flex-flow: column nowrap;}
 input, datalist textarea { margin-bottom: .5em;}
-audio {
-   -webkit-appearance: none;
-   -moz-appearance:    none;
-   appearance:         none;
-}
-audio::{
-   -webkit-appearance: none;
-   -moz-appearance:    none;
-   appearance:         none;
-}
-audio::{webkit-appearance:none;
-}	
+
+
+
 audio::-internal-media-controls-download-button {
     display:none;
 }
-audio::-webkit-media-controls-play-button {
-  -webkit-appearance: none;
-  
-}
+
 audio::-webkit-media-controls-enclosure {
     overflow:hidden;
 }
 audio::-webkit-media-controls-panel {
     width: calc(100% + 33px);
 	background-color: #94bddc;
+	-webkit-appearance: none;
 }  
-
+audio::-webkit-media-controls-play-button, {
+    -webkit-appearance: none;
+    display: block;
+    padding: 0;
+    border: 0;
+    -webkit-user-select: none;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    mix-blend-mode: plus-darker;
+    opacity: 0.55;
+    -webkit-mask-position: 50% 50%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-origin: border-box;
+    background-color: black;
+    transition: background-color 250ms;
+}
 
 .audio-container {
 	 audio::-webkit-media-controls-panel {
