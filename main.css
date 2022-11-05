@@ -200,10 +200,10 @@ audio::-webkit-media-controls-enclosure {
 }
 audio::-webkit-media-controls-panel {
     width: calc(100% + 33px);
-	background-color: #94bddc;
-	-webkit-appearance: none;
+    background-color: #94bddc;
+    appearance: none;
 }  
-audio::-webkit-media-controls-play-button, {
+audio::-webkit-media-controls-play-button {
     -webkit-appearance: none;
     display: block;
     padding: 0;
@@ -211,7 +211,6 @@ audio::-webkit-media-controls-play-button, {
     -webkit-user-select: none;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    mix-blend-mode: plus-darker;
     opacity: 0.55;
     -webkit-mask-position: 50% 50%;
     -webkit-mask-repeat: no-repeat;
