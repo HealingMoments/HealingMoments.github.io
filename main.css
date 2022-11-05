@@ -192,11 +192,13 @@ input, datalist textarea { margin-bottom: .5em;}
 
 
 audio::-internal-media-controls-download-button {
+	appearance:none;
     display:none;
 }
 
 audio::-webkit-media-controls-enclosure {
     overflow:hidden;
+	appearance:none;
 }
 audio::-webkit-media-controls-panel {
     width: calc(100% + 33px);
@@ -204,19 +206,19 @@ audio::-webkit-media-controls-panel {
     appearance: none;
 }  
 audio::-webkit-media-controls-play-button {
-    -webkit-appearance: none;
-    display: block;
+    appearance: media-play-button;
+    display: flex;
+    flex: none;
+    border: none;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 9px;
+    margin-right: 9px;
     padding: 0;
-    border: 0;
-    -webkit-user-select: none;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    opacity: 0.55;
-    -webkit-mask-position: 50% 50%;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-origin: border-box;
-    background-color: black;
-    transition: background-color 250ms;
+    background-color: initial;
+    color: inherit;
 }
 
 .audio-container {
