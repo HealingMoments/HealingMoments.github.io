@@ -189,7 +189,11 @@ form { display: flex;
        flex-flow: column nowrap;}
 input, datalist textarea { margin-bottom: .5em;}
 
-
+audio {
+    width: 210px;
+    height: 26.25px;
+    appearance:none;
+}
 
 audio::-internal-media-controls-download-button {
 	appearance:none;
@@ -279,4 +283,11 @@ only screen and (max-width: 479),
 		
 		/*padding-right: 10px; */
 		white-space: nowrap;
+		
+}
+audio {
+    width: 330px;
+    height: 41.25px;
+    appearance:none;
+}
 	
