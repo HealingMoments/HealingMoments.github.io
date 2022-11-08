@@ -126,9 +126,10 @@ section h2 {
 	
 
 /* the styles for the footer */
-footer {text-align: center;
+.footercl {text-align: center;
 		font-style: italic;
 		font-size: small;
+		color:#a22358;
 		clear: right;
 		}
 .black     {color:#000000;font-size: 130%
@@ -196,21 +197,22 @@ audio {
 }
 
 audio::-internal-media-controls-download-button {
-	appearance:none;
+	-webkit-appearance: none;
     display:none;
 }
 
 audio::-webkit-media-controls-enclosure {
     overflow:hidden;
-	appearance:none;
+	-webkit-appearance: none;
 }
 audio::-webkit-media-controls-panel {
-    width: calc(100% + 33px);
-    background-color: #94bddc;
-    appearance: none;
+ /*   width: calc(100% + 33px);*/
+    /*background-color: #94bddc;*/
+	background-color: #a22358;
+    -webkit-appearance: none;
 }  
 audio::-webkit-media-controls-play-button {
-    appearance: media-play-button;
+    -webkit-appearance: media-play-button;
     display: flex;
     flex: none;
     border: none;
@@ -222,12 +224,30 @@ audio::-webkit-media-controls-play-button {
     margin-right: 9px;
     padding: 0;
     background-color: initial;
-    color: inherit;
+	color:white;
+    /*color: inherit;*/
+}
+
+audio::-webkit-media-controls-wireless-playback-status.picture-in-picture
+{
+    -webkit-appearance: none;
 }
 
 .audio-container {
 	 audio::-webkit-media-controls-panel {
   background-color: #56AEFF;
+}
+audio::-webkit-media-controls-wireless-playback-status.small {
+-webkit-appearance: none;
+}
+audio::-webkit-media-controls-wireless-playback-status {
+	-webkit-appearance: none;
+}
+audio::-webkit-media-controls-wireless-playback-text-bottom.picture-in-picture {
+	-webkit-appearance: none;
+}
+audio::-webkit-media-controls-wireless-playback-text-top {
+	-webkit-appearance: none;
 }
 }
 /*audio {margin-bottom:.25em; }
