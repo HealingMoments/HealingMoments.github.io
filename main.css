@@ -2,14 +2,15 @@
 html {
 	background:linear-gradient(0.25turn,#DBE7B6,#ffffff,#f2d2df);
     color: #82204b; }
+
 body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 100%;
-	width: 100%;                       /* changed from 990 pixels */
-	max-width: 1210px;                /* maximum width of page */
-	
-	margin: .5em auto; 
-	padding: .5em   
+	font-size: 120%;
+	width: auto;                       /* changed from 990 pixels */
+	max-width: 100%;                /* maximum width of page */
+	overflow: auto;
+	 margin: 0 auto;  
+	 /*! padding: .25em */    
 	
 }
 
@@ -37,6 +38,7 @@ header {
 	width: 100%;                         /* full width of body */
 	padding-bottom: 2em;
 	background-repeat: no-repeat;
+	align:center;
 }
 header h2 {
 	font-size: 2.25em;
@@ -98,7 +100,8 @@ section {
 }
 section img{width: 100%;
             max-width: 200px;
-            max-height: 200px;}
+            max-height: 200px;
+            padding: 2em}
 			
 section ul {
 	margin-top: 0;
@@ -121,7 +124,6 @@ section h2 {
 	color: gray;
 } */
 
-}
 /*audio goes here*/
 	
 
@@ -193,7 +195,7 @@ input, datalist textarea { margin-bottom: .5em;}
 audio {
     width: 210px;
     height: 26.25px;
-    appearance:none;
+    -webkit-appearance: none;
 }
 
 audio::-internal-media-controls-download-button {
