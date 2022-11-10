@@ -38,7 +38,7 @@ header {
 	width: 100%;                         /* full width of body */
 	padding-bottom: 2em;
 	background-repeat: no-repeat;
-	align:center;
+	
 }
 header h2 {
 	font-size: 2.25em;
@@ -134,7 +134,7 @@ section h2 {
 		color:#a22358;
 		clear: right;
 		}
-.black     {color:#000000;font-size: 130%
+.black     {color:#000000;font-size: 130%;
             display: block;
            margin-left: auto;
            margin-right: auto;}
@@ -235,10 +235,7 @@ audio::-webkit-media-controls-wireless-playback-status.picture-in-picture
     -webkit-appearance: none;
 }
 
-.audio-container {
-	 audio::-webkit-media-controls-panel {
-  background-color: #56AEFF;
-}
+
 audio::-webkit-media-controls-wireless-playback-status.small {
 -webkit-appearance: none;
 }
@@ -251,7 +248,7 @@ audio::-webkit-media-controls-wireless-playback-text-bottom.picture-in-picture {
 audio::-webkit-media-controls-wireless-playback-text-top {
 	-webkit-appearance: none;
 }
-}
+
 /*audio {margin-bottom:.25em; }
     /*    max-height: 92%;
     /*    max-width: 92%;}
@@ -263,6 +260,7 @@ Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px
 and also iPads specifically.
 */
+}
 @media 
 only screen and (max-width: 479),
 (min-device-width: 268px) and (max-device-width: 1024px)  {
