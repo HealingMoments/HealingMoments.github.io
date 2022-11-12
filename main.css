@@ -200,8 +200,8 @@ form { display: flex;
 input, datalist textarea { margin-bottom: .5em;}
 
 audio {
-    width: 210px;
-    height: 26.25px;
+    width: 310px;
+    height: 46.25px;
     -webkit-appearance: none;
 }
 
@@ -217,9 +217,9 @@ audio::-webkit-media-controls-enclosure {
 audio::-webkit-media-controls-panel {
  /*   width: calc(100% + 33px);*/
     /*background-color: #94bddc;*/
-	background-color:#fab927; 
+	background-color:#f46e2b; 
 	 
-	/*opacity:.91; */
+	/*opacity:.81; */
     -webkit-appearance: none;
 }  
 audio::-webkit-media-controls-play-button {
@@ -234,9 +234,23 @@ audio::-webkit-media-controls-play-button {
     margin-left: 9px;
     margin-right: 9px;
     padding: 0;
-    background-color: initial;
+    /*background-color: initial; */
+	background-color: #fab927;
+    border-radius: 50%;
 	color:white;
+	opacity:.93;
     /*color: inherit;*/
+}
+audio::-webkit-media-controls-volume-slider {
+  background-color: white;
+  border-radius: 25px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+
+audio::-webkit-media-controls-current-time-display {
+  color: #fff;
 }
 
 audio::-webkit-media-controls-wireless-playback-status.picture-in-picture
