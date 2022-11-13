@@ -218,7 +218,7 @@ audio::-webkit-media-controls-enclosure {
 audio::-webkit-media-controls-panel {
  /*   width: calc(100% + 33px);*/
     /*background-color: #94bddc;*/
-	background-color:#f9b525; 
+	background-color:#f6d6cb; 
 	 
 	/*opacity:.81; */
     -webkit-appearance: none;
@@ -236,7 +236,7 @@ audio::-webkit-media-controls-play-button {
     margin-right: 9px;
     padding: 0;
     /*background-color: initial; */
-	background-color: #fcd88b;
+	background-color: #fcf2ef;
     border-radius: 50%;
 	color:white;
 	/*opacity:.43; */
