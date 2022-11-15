@@ -200,9 +200,7 @@ form { display: flex;
        flex-flow: column nowrap;}
 input, datalist textarea { margin-bottom: .5em;}
 
-audio {
-     -webkit-appearance: none;
-}
+
 
 audio::-internal-media-controls-download-button {
 	-webkit-appearance: none;
@@ -217,9 +215,11 @@ audio::-webkit-media-controls-panel {
  /*   width: calc(100% + 33px);*/
     /*background-color: #94bddc;*/
 	background-color:#f6d6cb; 
-	
+	 
 	/*opacity:.81; */
     -webkit-appearance: none;
+	overflow-y: hidden;
+	padding: 1px;
 }  
 audio::-webkit-media-controls-play-button {
     -webkit-appearance: media-play-button;
@@ -306,14 +306,7 @@ footer p {
 
 @media only screen and (max-width: 375px),
 (min-width: 268px) and (max-width: 1502px)  {
-        audio::-webkit-media-controls-panel {
- /*   width: calc(100% + 33px);*/
-    /*background-color: #94bddc;*/
-	background-color:#f6d6cb; 
-	display:block; 
-	/*opacity:.81; */
-    -webkit-appearance: none;
-}  
+     header{overflow-y: hidden;}
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
 		display: block; border:none; 
@@ -338,7 +331,7 @@ footer p {
 		position: relative;
 		padding-left: 5%; 
 		text-align:center;
-		font:130%;
+		font:120%;
 		
 	}
 	
