@@ -217,7 +217,7 @@ audio::-webkit-media-controls-panel {
  /*   width: calc(100% + 33px);*/
     /*background-color: #94bddc;*/
 	background-color:#f6d6cb; 
-	 
+	display:block; 
 	/*opacity:.81; */
     -webkit-appearance: none;
 }  
