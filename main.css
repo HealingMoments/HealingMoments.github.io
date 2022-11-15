@@ -201,9 +201,7 @@ form { display: flex;
 input, datalist textarea { margin-bottom: .5em;}
 
 audio {
-    width: 310px;
-    height: 46.25px;
-    -webkit-appearance: none;
+     -webkit-appearance: none;
 }
 
 audio::-internal-media-controls-download-button {
@@ -333,7 +331,7 @@ footer p {
 		position: relative;
 		padding-left: 5%; 
 		text-align:center;
-		font:120%;
+		font:130%;
 		
 	}
 	
