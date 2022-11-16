@@ -202,10 +202,7 @@ input, datalist textarea { margin-bottom: .5em;}
 
 
 
-audio::-internal-media-controls-download-button {
-	-webkit-appearance: none;
-    display:none;
-}
+
 
 audio::-webkit-media-controls-enclosure {
     overflow:hidden;
@@ -219,7 +216,7 @@ audio::-webkit-media-controls-panel {
 	/*opacity:.81; */
     -webkit-appearance: none;
 	overflow-y: hidden;
-	padding: 1px;
+	padding: 3px;
 }  
 audio::-webkit-media-controls-play-button {
     -webkit-appearance: media-play-button;
@@ -269,6 +266,10 @@ audio::-webkit-media-controls-wireless-playback-text-bottom.picture-in-picture {
 }
 audio::-webkit-media-controls-wireless-playback-text-top {
 	-webkit-appearance: none;
+}
+audio::-internal-media-controls-download-button {
+	-webkit-appearance: none;
+    display:none;
 }
 
 /*audio {margin-bottom:.25em; }
