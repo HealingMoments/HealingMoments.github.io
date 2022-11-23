@@ -352,9 +352,7 @@ section{100%;}
 		font-size:1.25em;
 	}   
 	section {text-align:center;}
-   #nav_menu {
-        display: none;
-    }
+   
     #mobile_menu {
         display: block;
     }
