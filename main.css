@@ -7,7 +7,8 @@ html {
     color: #82204b; }
 
 body {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	/*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+	font-family:"Sitka Display",Verdana, Arial, Helvetica, sans-serif;
 	font-size: 100%;
 	width:100%;                       /* changed from 990 pixels */
 	max-width: 1204px;                /* maximum width of page */
@@ -21,6 +22,10 @@ p {
 	font-size: .875em;
 	padding-bottom: .5em;
 	line-height: 1.5;
+}
+/* This name can be anything	 */
+span.bold {
+   font-weight: bold;
 }
 em {
 	font-weight: bold;
@@ -140,7 +145,7 @@ section h2 {
 		}
 .mainp     {color:#000000;font-size: 120%;
             display: block;
-	    /*font-weight:bold;*/
+	        font-family:"Sitka Display",Verdana, Arial, Helvetica, sans-serif;
            margin-left: auto;
 		   
            margin-right: auto;
